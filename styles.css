@@ -1,0 +1,131 @@
+@keyframes colorflow {
+	0%   { background-color: #3737B0; }
+	25%  { background-color: #8938A0; }
+	50%  { background-color: #377E9A; }
+	100% { background-color: #3737B0; }
+}
+
+@keyframes colorflowb {
+	0%   { border-color: #3737B0; }
+	25%  { border-color: #8938A0; }
+	50%  { border-color: #377E9A; }
+	100% { border-color: #3737B0; }
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #161616;
+	color: #E0E0E0;
+	cursor: default;
+
+	margin-left: 20%;
+	margin-right: 20%;
+	min-height: 97vh;
+
+	display: flex; 
+	flex-direction: column;
+}
+
+.cablock {
+	margin: 0;
+	padding: 0;
+	background-color: #3737B0;
+	animation: colorflow 100s 0s infinite normal linear;
+}
+
+.cablock>h1 {
+	font-size: 30px;
+    font-size: 2.5vmax;
+	font-weight: 700;
+	margin-left: 3%;
+
+	border-radius: 25px;
+}
+
+.menu {
+	min-height: 70px;
+	overflow: hidden;
+	white-space: nowrap;
+
+	padding-left: 5%;
+	padding-right: 5%;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+.menu>.item {
+	margin: auto;
+	padding: auto;
+	height: 100%;
+	display: inline; 
+
+	text-align: center;
+	flex: 1 1 auto;
+
+	text-decoration: none;
+	line-height: 70px;
+
+	font-size: 30px;
+    font-size: 1.2vmax;
+	font-weight: 600;
+}
+
+.menu>.item b     { font-weight: 900; }
+.menu>.item:hover { background-color: #161616; }
+
+article {
+	padding: 1em 1em 1em 1em;
+	flex: 1;
+}
+
+article h1 {
+	color: #EFEFEF;
+	font-size: 30px;
+	font-size: 1.5vmax;
+	font-weight: 900;
+}
+
+article p {
+	padding-top: 0.05em;
+	padding-bottom: 0.05em;
+	font-size: 30px;
+	font-size: 1.1vmax;
+	text-align: justify;
+}
+
+footer {
+	min-height: 40px;
+	text-align: center;
+}
+
+footer p {
+	position: relative;
+	top: 50%;
+	font-weight: 100;
+	font-size: 30px;
+	font-size: 0.9vmax;
+	font-weight: 700;
+}
+
+.img-container {
+	display: flex;
+	justify-content: stretch;
+
+	margin-top: 1em;
+	margin-left: 3em;
+	margin-right: 3em;
+	text-align: center;
+}
+
+.img-container img {
+	border: solid;
+	border-width: 3px;
+	border-color: #3737B0;
+	border-radius: 25px;
+	display: inline-block;
+	width: 100%;
+
+	animation: colorflowb 100s 0s infinite normal linear;
+}
